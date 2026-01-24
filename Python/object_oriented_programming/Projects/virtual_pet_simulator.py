@@ -127,13 +127,16 @@ def main():
     # 2. IF NO PET LOADED, CREATE NEW
     if current_pet is None:
         print("\nStarting a New Game...")
-        choice = input("Do you want a Cat or a Dog? ").strip().lower()
-        if choice == "dog":
-            current_pet = Dog()
-        elif choice == "cat":
-            current_pet = Cat()
-        else:
-            current_pet = Pet()
+        while True:
+            choice = input("Do you want a Cat or a Dog? ").strip().lower()
+            if choice == "dog":
+                current_pet = Dog()
+                break
+            elif choice == "cat":
+                current_pet = Cat()
+                break
+            else:
+                print("Invalid Option")
 
     # 3. GAME LOOP
     while True:
