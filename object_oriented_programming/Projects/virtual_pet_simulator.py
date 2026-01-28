@@ -55,7 +55,6 @@ class Pet:
         self.hygiene -= 5
         self.happiness -= 5
 
-    
     def __str__(self):
         return f"[{self.__class__.__name__}] Energy: {self.energy} | Hygiene: {self.hygiene} | Happiness: {self.happiness} | Health: {self.health}"
 
