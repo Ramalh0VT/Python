@@ -9,3 +9,6 @@ This folder is similar to the automation folder, though instead of focusing on g
 
 ## Object oriented programming folder
 On this folder, i have complex projects and examples about object oriented programming, i even made a virtual pet simulator game (similar to tamagotchi and talking tom). Here is what i consider to be the biggest advancing i did on programming, since OOP is used to make very complex systems and applications.
+
+## Modular programming folder
+Different from the other folders, here i try my best to make modulated python coding, except i apply all the knowledge i gained from the other utilities i developed meanwhile time passed, maybe this is the last thing i will develop relating to python atleast for now since i don't plan to focus on it alot, and neither do i want to learn alot about GUI's on python, though it's likely i will spend time doing so.
