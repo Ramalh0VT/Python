@@ -1,5 +1,5 @@
 import data_fetcher
-def convert():
+def temp():
     choice_1 = input("Hello! What city do you wish to know the temperature? ").strip().lower()
     info = data_fetcher.data()
     if choice_1 in info["city"]:
@@ -12,7 +12,11 @@ def convert():
         choice_2 = input("Would you like to see the temperature on celsius or fahrenheit? (c/f)").strip().lower()
         if choice_2 == "f":
             fahrenheit(result)
-            print(f"The temperature in {choice_1} is ")
+            print(f"The temperature in {choice_1} is {fahrenheit(result)}ºF")
+            return
+        elif choice_2 == "c":
+            print(f"The temperature in {choice_1} is {result}ºC")
+            return
     else:
         print("City not found in the database. Would you like to try again? (y/n)")
         while True:
