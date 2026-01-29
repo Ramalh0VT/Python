@@ -1,6 +1,6 @@
-import math_operations
+from operations import add,mult,sub,div
 
-def menu()
+def menu():
     print("=== SIMPLE CALCULATOR ===")
     print("Choose an option:")
     print("1. Addition")
@@ -10,12 +10,15 @@ def menu()
     print("5. Quit")
     choice = input("")
     if choice == "1":
-        math_operations.add()
+        operations.add()
     elif choice == "2":
-        math_operations.sub()
+        operations.sub()
     elif choice == "3":
-        math_operations.mult()
+        operations.mult()
     elif choice == "4":
-        math_operations.div()
+        operations.div()
     elif choice == "5":
-        print("Quitting...")
+        operations.quit()
+
+while True:
+    menu()
